@@ -4,13 +4,13 @@
 
 
 
-Input Data:
+###### Input Data:
 There are 100 different movies, numbered from 0 to 99. A user is represented as a set of movies. 
 You are provided with a file where each line represents a user (with ID “U1” for example) and a list of movies the user has watched (e.g., movie #0, 12, 45). Each user has watched at least one movie.
 <br>
 <br>
-<br>
-Output Data:
+
+###### Output Data:
 For each user with that we could find similar users, output the recommended movies as follows. No recommendations for the user if there is no similar user found.
 
 Users should be output in increasing order. And the movie should be ordered by the number of the top-5 users who have watched them (If same, the movie that has smallest ID comes first).
@@ -18,16 +18,18 @@ It is possible to find that the total number of top-5 users watched movies is le
 For simplicity, the recommended movies may contain the movie that user has already watched. You don’t need to remove it.
 <br>
 <br>
-<br>
-Process:
-• Jaccard coefficient is used to measure the similarity of sets 
-• Computations of Signatures and LSH have to be done in parallel 
-  o Hint:Whilecomputingsignatures,youcandivideusers(representedasasetofmovies)
-into partitions and compute signatures for the partitions in parallel.
-  o Hint:WhilecomputingLSH,youcouldtakethebandaskey,theuserIDasvalue,and
-then find the candidate pairs/users in parallel.
-  o Hint:YouneedtocomputetheJaccardsimilaritiesofsimilarpairsidentifiedbyLSH,
-based on which you find the top-5 users and top-3 movies.
+
+###### Process:
+<ul>
+<li> Jaccard coefficient is used to measure the similarity of sets </li>
+<li> Computations of Signatures and LSH have to be done in parallel </li>
+<ul> <li>o Hint:Whilecomputingsignatures,youcandivideusers(representedasasetofmovies)
+into partitions and compute signatures for the partitions in parallel.</li>
+<li> o Hint:WhilecomputingLSH,youcouldtakethebandaskey,theuserIDasvalue,and
+then find the candidate pairs/users in parallel. </li>
+<li> o Hint:YouneedtocomputetheJaccardsimilaritiesofsimilarpairsidentifiedbyLSH,
+based on which you find the top-5 users and top-3 movies.</li></ul>
+</ul>
 
 
 <ol>
