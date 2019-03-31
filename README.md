@@ -46,5 +46,5 @@ Recommend 3 movies to U where the movies are ordered by the number of these top 
 
 </ol>
 Used Locality-Sensitive Hashing (LSH) to find similar users and made movie recommendations using Python and Spark
-• Divided users into partitions, discovered similar users by applying minhash to compute signatures for the partitions • Implemented LSH to speed up the process of finding similar users
-• Computed Jaccard similarities of similar users identified by LSH, made recommendations based on LSH result
+<li> • Divided users into partitions, discovered similar users by applying minhash to compute signatures for the partitions </li> <li>• Implemented LSH to speed up the process of finding similar users
+</li><li>• Computed Jaccard similarities of similar users identified by LSH, made recommendations based on LSH result</li>
