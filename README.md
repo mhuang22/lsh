@@ -23,12 +23,9 @@ For simplicity, the recommended movies may contain the movie that user has alrea
 <ul>
 <li> Jaccard coefficient is used to measure the similarity of sets </li>
 <li> Computations of Signatures and LSH have to be done in parallel </li>
-<ul> <li>Hint:Whilecomputingsignatures,youcandivideusers(representedasasetofmovies)
-into partitions and compute signatures for the partitions in parallel.</li>
-<li> Hint:WhilecomputingLSH,youcouldtakethebandaskey,theuserIDasvalue,and
-then find the candidate pairs/users in parallel. </li>
-<li> Hint:YouneedtocomputetheJaccardsimilaritiesofsimilarpairsidentifiedbyLSH,
-based on which you find the top-5 users and top-3 movies.</li></ul>
+<ul> <li>Hint:While computing signatures,you can divideusers(represent dasaset of movies) into partitions and compute signatures for the partitions in parallel.</li>
+<li> Hint:While computing LSH,you could take the band as keys,the userID as values, and then find the candidate pairs/users in parallel. </li>
+<li> Hint:You need to compute the Jaccard similarities of similar pairs identified by LSH, based on which you find the top-5 users and top-3 movies.</li></ul>
 </ul>
 
 
